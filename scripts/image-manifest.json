@@ -1,0 +1,97 @@
+{
+  "/images/hero/paella-grill.jpg": {
+    "width": 2000,
+    "height": 1334,
+    "alt": "Paella de fruits de mer dans une grande poêle, servie sur une table en bois"
+  },
+  "/images/dishes/paella-seafood.jpg": {
+    "width": 1500,
+    "height": 1000,
+    "alt": "Assiette de paella aux gambas et aux calamars"
+  },
+  "/images/dishes/paella-pan.jpg": {
+    "width": 1500,
+    "height": 843,
+    "alt": "Paella espagnole servie dans une poêle en fonte"
+  },
+  "/images/dishes/grilled-fish.jpg": {
+    "width": 1500,
+    "height": 1000,
+    "alt": "Poisson grillé avec citron et herbes fraîches"
+  },
+  "/images/dishes/grilled-mackerel.jpg": {
+    "width": 1500,
+    "height": 1000,
+    "alt": "Maquereau grillé accompagné d'un accompagnement"
+  },
+  "/images/gallery/grilled-fish-steel.jpg": {
+    "width": 1500,
+    "height": 1500,
+    "alt": "Poisson grillé présenté sur une assiette en acier"
+  },
+  "/images/restaurant/interior-evening.jpg": {
+    "width": 1500,
+    "height": 2000,
+    "alt": "Salle du restaurant éclairée à la bougie dans la soirée"
+  },
+  "/images/restaurant/interior-warm-lights.jpg": {
+    "width": 1500,
+    "height": 2249,
+    "alt": "Lumières chaudes suspendues au-dessus de la salle"
+  },
+  "/images/restaurant/interior-cozy.jpg": {
+    "width": 1500,
+    "height": 2000,
+    "alt": "Salle chaleureuse avec tables dressées et éclairages doux"
+  },
+  "/images/gallery/dining-candles.jpg": {
+    "width": 1500,
+    "height": 2250,
+    "alt": "Table dressée pour un dîner convivial, bougies allumées"
+  },
+  "/images/gallery/table-setting.jpg": {
+    "width": 1500,
+    "height": 1000,
+    "alt": "Table dressée de style méditerranéen, assiettes et verres"
+  },
+  "/images/gallery/shared-table.jpg": {
+    "width": 1500,
+    "height": 1000,
+    "alt": "Plats partagés disposés sur une table en bois"
+  },
+  "/images/gallery/shared-bowls.jpg": {
+    "width": 1500,
+    "height": 2249,
+    "alt": "Bols de cuisine méditerranéenne partagés à table"
+  },
+  "/images/dishes/octopus-gallega.jpg": {
+    "width": 1500,
+    "height": 2250,
+    "alt": "Poulpe grillé avec roquette et quartier de citron"
+  },
+  "/images/dishes/octopus-charcoal.jpg": {
+    "width": 1500,
+    "height": 2666,
+    "alt": "Tentacules de poulpe grillés sur des braises"
+  },
+  "/images/dishes/octopus-plating.jpg": {
+    "width": 1500,
+    "height": 2250,
+    "alt": "Poulpe grillé dressé par le chef avec herbes et citron"
+  },
+  "/images/dishes/seafood-platter.jpg": {
+    "width": 1500,
+    "height": 1000,
+    "alt": "Plateau d'huîtres sur glace avec quartiers de citron"
+  },
+  "/images/experience/chef-paella-cooking.jpg": {
+    "width": 1500,
+    "height": 2250,
+    "alt": "Chef cuisinant une paella espagnole au-dessus d'un feu ouvert"
+  },
+  "/images/menu/menu-hero-lamp.jpg": {
+    "width": 1500,
+    "height": 2250,
+    "alt": "Table dressée éclairée par une lampe dans une salle sombre"
+  }
+}

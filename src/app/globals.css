@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Pepe Luis — Concept web
+   Design tokens. Mediterranean coastal editorial palette.
+   ========================================================================== */
+
+@theme {
+  /* --- Palette ---------------------------------------------------------- */
+  --color-cream: #f4efe6;
+  --color-shell: #fffdf8;
+  --color-stone: #d8cfc0;
+  --color-wine: #541e1d;
+  --color-wine-deep: #3d1413;
+  --color-ink: #1b1a18;
+  --color-ink-soft: #26241f;
+  --color-terracotta: #b85f3d;
+  --color-olive: #6c7050;
+  --color-saffron: #d49a45;
+
+  /* --- Type scale (fluid) ----------------------------------------------- */
+  --text-display: clamp(2.75rem, 8vw, 6.5rem);
+  --text-display-menu: clamp(3rem, 10vw, 7rem);
+  --text-section: clamp(2.125rem, 5vw, 3.5rem);
+  --text-subsection: clamp(1.5rem, 2.9vw, 2.25rem);
+  --text-dish: clamp(1.25rem, 1.9vw, 1.625rem);
+  --text-lead: clamp(1.0625rem, 1.35vw, 1.3125rem);
+  --text-body: 0.9375rem;
+  --text-ui: 0.8125rem;
+  --text-eyebrow: 0.6875rem;
+
+  /* --- Spacing rhythm --------------------------------------------------- */
+  --spacing-section: clamp(4.5rem, 11vw, 9rem);
+  --spacing-gutter: clamp(1.25rem, 5vw, 4rem);
+
+  /* --- Motion ----------------------------------------------------------- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+/* --- Fonts ------------------------------------------------------------
+      NOTE: the font tokens are declared in the `@theme inline` block below,
+      NOT here. A plain `@theme` entry would emit
+      `--font-sans: var(--font-sans)` into `:root`, and a self-referential
+      custom property is invalid and resolves to nothing — silently killing
+      every `font-sans`/`font-display` rule on the site. Do not move them. */
+}
+
+/* The `inline` keyword makes Tailwind use the variable's value inside the
+   generated utility (`.font-sans { font-family: var(--font-sans) }`) instead
+   of emitting a new declaration into `:root`. next/font supplies the real
+   values on the `<html>` element, so `html.font-sans` and the Tailwind utility
+   resolve to the same underlying variable. */
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Prevents layout shift when a modal locks scrolling. */
+    scrollbar-gutter: stable;
+  }
+
+  /* Display face: Instrument Serif is a display-only face. It is used at large
+     sizes only. Negative tracking compensates for its tight default fit. */
+  .font-display {
+    font-family: var(--font-display), ui-serif, Georgia, serif;
+    font-weight: 400;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Anchor targets clear the sticky navbar instead of hiding beneath it. */
+  section[id],
+  [id]:target {
+    scroll-margin-top: 5.5rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-terracotta);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  /* Dark surfaces need a light focus ring to stay visible. */
+  .on-dark :focus-visible,
+  .on-dark:focus-visible {
+    outline-color: var(--color-saffron);
+  }
+
+  ::selection {
+    background-color: var(--color-wine);
+    color: var(--color-shell);
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  /* Native date/time pickers default to a light UI that clashes on cream. */
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0.55;
+    cursor: pointer;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/* Editorial eyebrow: small, uppercase, widely tracked. Always Manrope. */
+@utility eyebrow {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-size: var(--text-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* Thin decorative rule used between sections. */
+@utility rule {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  opacity: 0.16;
+}
+
+/* Responsive frame gutters. */
+@utility gutter {
+  padding-inline: var(--spacing-gutter);
+}
