@@ -177,3 +177,29 @@
 @utility gutter {
   padding-inline: var(--spacing-gutter);
 }
+
+/* ==========================================================================
+   Tap-target helper
+   ==========================================================================
+   Small inline links (nav labels, footer links) measure 19–22px tall, which is
+   under the 24px minimum in WCAG 2.2 SC 2.5.8. Growing them with vertical
+   padding would shift the surrounding rhythm and move the decorative
+   underlines, so instead this extends the *clickable* area via a transparent
+   pseudo-element.
+
+   Nothing is painted, no box is added to the flow, so spacing and decoration
+   are unchanged. The 0.5rem extension stays inside the 0.875rem gap between
+   neighbouring footer links, so one link's overlay never covers another's text.
+   ========================================================================== */
+
+@utility hit {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset-inline: -0.25rem;
+    top: -0.5rem;
+    bottom: -0.5rem;
+  }
+}

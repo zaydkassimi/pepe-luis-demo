@@ -101,7 +101,21 @@ npm run build
 
 ## Accessibilité et mouvement
 
-- Lien d'évitement, repères ARIA, focus visible, cibles tactiles d'au moins 44 px.
+- Lien d'évitement, repères ARIA, focus visible.
+- Cibles tactiles : les boutons et champs font au moins 44px de haut. Les liens
+  de texte en ligne (navigation, pied de page) mesurent 19 à 22px à cause de leur
+  corps, et utilisent donc la classe `hit` — un pseudo-élément transparent qui
+  étend la zone cliquable au minimum de 24px prévu par WCAG 2.2 (SC 2.5.8)
+  sans rien modifier à la mise en page.
 - `prefers-reduced-motion` neutralise les animations et le défilement fluide.
 - La galerie utilise des spans de colonnes explicites plutôt qu'un masonry :
-  l'ordre de lecture ne change pas selon la largeur de fenêtre.
+  l'ordre de lecture ne change pas selon la largeur de fenêtre. Les cadres ne
+  portent pas `h-full` : un pourcentage de hauteur se calcule sur la plus haute
+  élément de la ligne, et `aspect-ratio` en déduirait une largeur supérieure à
+  celle de la colonne.
+
+## Favicon
+
+`src/app/icon.svg` est un monogramme typographique provisoire, dans la palette
+de la marque. Le restaurant n'a pas de logo officiel et aucun n'a été inventé :
+remplacez ce fichier par le logo réel avant la mise en ligne.

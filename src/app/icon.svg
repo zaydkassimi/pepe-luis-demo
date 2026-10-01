@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!--
+    Placeholder application icon.
+
+    Pepe Luis has no official logo, and fabricating one would be worse than
+    saying so. This is a plain typographic monogram in the brand palette,
+    matching the Wordmark component. Replace this file with the real logo
+    before launch; Next.js serves src/app/icon.* automatically and injects the
+    <link rel="icon"> tag, which also removes the /favicon.ico 404.
+  -->
+  <rect width="64" height="64" fill="#541e1d" />
+  <text
+    x="32"
+    y="33"
+    fill="#f4efe6"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="30"
+    letter-spacing="-1"
+    text-anchor="middle"
+    dominant-baseline="central"
+  >PL</text>
+</svg>

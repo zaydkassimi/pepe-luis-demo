@@ -48,7 +48,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="font-sans text-body text-shell/75 transition-colors duration-300 hover:text-shell"
+                  className="hit font-sans text-body text-shell/75 transition-colors duration-300 hover:text-shell"
                 >
                   Accueil
                 </Link>
@@ -56,7 +56,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/menu"
-                  className="font-sans text-body text-shell/75 transition-colors duration-300 hover:text-shell"
+                  className="hit font-sans text-body text-shell/75 transition-colors duration-300 hover:text-shell"
                 >
                   La carte
                 </Link>
@@ -65,7 +65,7 @@ export function Footer() {
                 <li key={item.label}>
                   <Link
                     href={`/${item.href}`}
-                    className="font-sans text-body text-shell/75 transition-colors duration-300 hover:text-shell"
+                    className="hit font-sans text-body text-shell/75 transition-colors duration-300 hover:text-shell"
                   >
                     {item.label}
                   </Link>
@@ -114,7 +114,7 @@ export function Footer() {
                   <li>
                     <a
                       href={phoneHref}
-                      className="inline-flex min-h-11 items-center font-sans text-body text-shell transition-colors duration-300 hover:text-saffron"
+                      className="hit inline-flex min-h-11 items-center font-sans text-body text-shell transition-colors duration-300 hover:text-saffron"
                     >
                       {siteConfig.phone}
                     </a>
@@ -127,7 +127,7 @@ export function Footer() {
                       href={whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex min-h-11 items-center font-sans text-body text-shell transition-colors duration-300 hover:text-saffron"
+                      className="hit inline-flex min-h-11 items-center font-sans text-body text-shell transition-colors duration-300 hover:text-saffron"
                     >
                       WhatsApp
                     </a>
@@ -138,7 +138,7 @@ export function Footer() {
                   <li>
                     <a
                       href={mailHref}
-                      className="inline-flex min-h-11 items-center font-sans text-body text-shell transition-colors duration-300 hover:text-saffron"
+                      className="hit inline-flex min-h-11 items-center font-sans text-body text-shell transition-colors duration-300 hover:text-saffron"
                     >
                       {siteConfig.email}
                     </a>
@@ -153,7 +153,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex min-h-11 items-center gap-2 border border-shell/25 px-5 font-sans text-ui font-semibold uppercase tracking-[0.14em] text-shell transition-colors duration-300 hover:border-shell hover:bg-shell hover:text-ink"
                 >
-                  Itinéraire
+                  ItinÃ©raire
                   <ArrowUpRight size={14} strokeWidth={1.5} aria-hidden="true" />
                 </a>
               ) : null}
@@ -165,11 +165,11 @@ export function Footer() {
         <div className="mt-16 border-t border-shell/12 pt-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="font-sans text-ui text-shell/45">
-              © {new Date().getFullYear()} Pepe Luis. Tous droits réservés.
+              Â© {new Date().getFullYear()} Pepe Luis. Tous droits rÃ©servÃ©s.
             </p>
             {siteConfig.demoMode ? (
               <p className="font-sans text-ui text-shell/45">
-                Concept web — démonstration non officielle
+                Concept web â€” dÃ©monstration non officielle
               </p>
             ) : null}
           </div>

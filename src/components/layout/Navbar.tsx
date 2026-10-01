@@ -78,7 +78,7 @@ export function Navbar() {
                   <li key={item.label}>
                     <Link
                       href={href}
-                      className="group relative font-sans text-ui font-medium uppercase tracking-[0.14em] text-ink/75 transition-colors duration-300 hover:text-ink"
+                      className="group hit relative font-sans text-ui font-medium uppercase tracking-[0.14em] text-ink/75 transition-colors duration-300 hover:text-ink"
                     >
                       {item.label}
                       <span
@@ -97,7 +97,7 @@ export function Navbar() {
               href="/menu"
               aria-current={pathname === "/menu" ? "page" : undefined}
               className={cx(
-                "font-sans text-ui font-medium uppercase tracking-[0.14em] transition-colors duration-300",
+                "hit font-sans text-ui font-medium uppercase tracking-[0.14em] transition-colors duration-300",
                 pathname === "/menu" ? "text-terracotta" : "text-ink/75 hover:text-ink",
               )}
             >

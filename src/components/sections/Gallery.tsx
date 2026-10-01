@@ -59,7 +59,13 @@ export function Gallery() {
           >
             <figure
               className={cx(
-                "group relative h-full overflow-hidden bg-stone",
+                // `h-full` is deliberately absent. Grid items stretch by
+                // default, so a percentage height would resolve against the
+                // tallest item in the row, and `aspect-ratio` would then derive
+                // a width wider than this column — pushing the figure past the
+                // content edge. Letting the aspect ratio drive the height keeps
+                // every frame inside its own column.
+                "group relative overflow-hidden bg-stone",
                 index < 2 ? "aspect-[3/4] md:aspect-[2/3]" : "aspect-[4/3]",
               )}
             >
