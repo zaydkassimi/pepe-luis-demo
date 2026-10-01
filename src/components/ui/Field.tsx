@@ -46,7 +46,7 @@ export function Field({
     <div className={cx("flex flex-col gap-2", className)}>
       <label
         htmlFor={name}
-        className="font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-shell/70"
+        className="font-sans text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-shell/70"
       >
         {label}
       </label>

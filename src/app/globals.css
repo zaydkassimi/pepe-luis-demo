@@ -18,16 +18,20 @@
   --color-olive: #6c7050;
   --color-saffron: #d49a45;
 
-  /* --- Type scale (fluid) ----------------------------------------------- */
-  --text-display: clamp(2.75rem, 8vw, 6.5rem);
-  --text-display-menu: clamp(3rem, 10vw, 7rem);
+  /* --- Type scale (fluid) -----------------------------------------------
+     The lower steps were raised off their previous values: body 15 -> 16px,
+     UI 13 -> 14px, eyebrow 11 -> 12px, lead 17 -> 18px at the small end.
+     13px UI copy in particular was too small to read comfortably on a phone
+     at arm's length. The upper display steps grew ~9% for the hero. */
+  --text-display: clamp(3rem, 8.6vw, 7.1rem);
+  --text-display-menu: clamp(3.25rem, 10.5vw, 7.5rem);
   --text-section: clamp(2.125rem, 5vw, 3.5rem);
   --text-subsection: clamp(1.5rem, 2.9vw, 2.25rem);
-  --text-dish: clamp(1.25rem, 1.9vw, 1.625rem);
-  --text-lead: clamp(1.0625rem, 1.35vw, 1.3125rem);
-  --text-body: 0.9375rem;
-  --text-ui: 0.8125rem;
-  --text-eyebrow: 0.6875rem;
+  --text-dish: clamp(1.3125rem, 2vw, 1.75rem);
+  --text-lead: clamp(1.125rem, 1.45vw, 1.4375rem);
+  --text-body: 1rem;
+  --text-ui: 0.875rem;
+  --text-eyebrow: 0.75rem;
 
   /* --- Spacing rhythm --------------------------------------------------- */
   --spacing-section: clamp(4.5rem, 11vw, 9rem);

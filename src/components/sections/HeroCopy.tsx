@@ -42,7 +42,7 @@ export function HeroCopy() {
           browser chooses to wrap, so `text-wrap: balance` is not applied here. */}
       <h1
         id="hero-title"
-        className="mt-7 font-display text-display leading-[0.94] tracking-[-0.02em] text-shell"
+        className="mt-7 font-display text-display leading-[0.90] tracking-[-0.022em] text-shell"
       >
         <motion.span {...rise()} transition={transition(0.15)} className="block">
           Le goût

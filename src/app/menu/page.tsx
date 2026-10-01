@@ -100,7 +100,7 @@ export default function MenuPage() {
                             {item.name}
                           </h3>
                           {item.featured ? (
-                            <span className="border border-terracotta/40 px-2 py-0.5 font-sans text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-terracotta">
+                            <span className="border border-terracotta/40 px-2 py-1 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-terracotta">
                               Signature
                             </span>
                           ) : null}

@@ -10,8 +10,8 @@ const BASE =
 
 const SIZES: Record<Size, string> = {
   // min-h keeps every variant at or above the 44px tap-target guidance.
-  sm: "min-h-11 px-5 text-[0.6875rem]",
-  md: "min-h-12 px-7 text-[0.75rem]",
+  sm: "min-h-11 px-5 text-[0.75rem]",
+  md: "min-h-12 px-7 text-[0.8125rem]",
 };
 
 const VARIANTS: Record<Variant, string> = {
